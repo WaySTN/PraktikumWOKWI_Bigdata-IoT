@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "author": "Praktikum IoT UPN Veteran Jawa Timur 2026",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 10,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -80,
+      "left": 280,
+      "attrs": {
+        "temperature": "26",
+        "humidity": "60"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_merah",
+      "top": 80,
+      "left": 280,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 120,
+      "left": 340,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_hijau",
+      "top": 160,
+      "left": 280,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 200,
+      "left": 340,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 260,
+      "left": 280,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["esp:TX0", "$serialMonitor:RX", "", []],
+    ["esp:RX0", "$serialMonitor:TX", "", []],
+    ["esp:3V3", "dht1:VCC", "red", []],
+    ["esp:GND.1", "dht1:GND", "black", []],
+    ["esp:D15", "dht1:SDA", "green", []],
+    ["esp:D2", "led_merah:A", "green", []],
+    ["led_merah:C", "r1:1", "black", []],
+    ["r1:2", "esp:GND.2", "black", []],
+    ["esp:D5", "led_hijau:A", "green", []],
+    ["led_hijau:C", "r2:1", "black", []],
+    ["r2:2", "esp:GND.2", "black", []],
+    ["esp:D4", "bz1:1", "green", []],
+    ["bz1:2", "esp:GND.2", "black", []]
+  ],
+  "dependencies": {}
+}
