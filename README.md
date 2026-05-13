@@ -49,9 +49,7 @@ praktikumbigdata_kelompok1/
 |  |- platformio.ini
 |  |- sketch.ino
 |  `- wokwi.toml
-|- PANDUAN_PRAKTIKUM_IOT_WOKWI.md
 |- HASIL_PENGUJIAN.md
-|- LAPORAN_PRAKTIKUM_IOT.md
 `- README.md
 ```
 
@@ -167,23 +165,14 @@ Seluruh pengujian utama telah berhasil dilakukan:
 - Screenshot bukti praktikum: **tersedia**
 - Laporan praktikum: **tersedia**
 
-Dokumen pendukung:
+Dokumen hasil pengujian:
 
-- [Panduan Praktikum](./PANDUAN_PRAKTIKUM_IOT_WOKWI.md)
 - [Hasil Pengujian](./HASIL_PENGUJIAN.md)
-- [Laporan Praktikum](./LAPORAN_PRAKTIKUM_IOT.md)
 
 Folder screenshot:
 
 - [Screenshot Pertemuan 1](./pertemuan-1/ss_pertemuan1)
 - [Screenshot Pertemuan 2](./pertemuan-2/ss_pertemuan2)
-
-## Cara Export Laporan ke PDF
-
-1. Buka file [LAPORAN_PRAKTIKUM_IOT.md](./LAPORAN_PRAKTIKUM_IOT.md).
-2. Pastikan extension `Markdown PDF` sudah terpasang di VS Code.
-3. Tekan `Ctrl+Shift+P`.
-4. Jalankan `Markdown PDF: Export (pdf)`.
 
 ## Catatan
 
